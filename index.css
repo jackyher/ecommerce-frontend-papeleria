@@ -1,0 +1,1032 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    background-color: whitesmoke;
+}
+
+h1{ font-size: 30px;}
+h2{ font-size: 25px;}
+h3{ font-size: 20px;}
+h4{ font-size: 15px;}
+h5{ font-size: 10px;}
+p{ font-size: 12px;}
+
+button{
+    font-size: 1em;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 40px;
+    border: 2px solid #01DAE4;
+    background-color: transparent;
+    color: black;
+}
+
+button:hover{
+    background-color: #4EE8EF;
+}
+
+.container{
+    max-width: 1150px;
+    margin: auto;
+}
+
+header{
+    background-color: #FF4545;
+    position: fixed;
+    width: 100%;
+}
+
+header .logo{
+    margin: 0;
+    padding: 15px 30px;
+    font-weight: bold;
+    color: white;
+    font-size: 1.45em;
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav{
+    display: flex;
+    text-align: right;
+    padding-bottom: 5px;
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+
+header a:hover{
+    color: black;
+}
+
+header img{
+    height: .65cm;
+    width: .65cm;
+}
+
+#banner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 100vh;
+    color: white;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("media/lapices.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#banner h1{
+    color: white;
+}
+
+#ofrece .container{
+    text-align: center;
+    padding: 0.5px 12px;
+}
+
+#ofrece .color-acento{ color: #01DAE4;}
+
+#catalogo{
+    background-color: #FF4545;
+    color: white;
+}
+
+#catalogo .container{
+    text-align: center;
+    padding: 30px 12px;
+    height: 50vh;
+}
+
+#catalogo a{
+    font-size: 1em;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 40px;
+    border: 2px solid #01DAE4;
+    background-color: transparent;
+    color: black;
+}
+
+#catalogo a:hover{
+    background-color: #4EE8EF;
+}
+
+#regalar{
+    color: black;
+    text-align: center;
+}
+
+#regalar .container{
+    padding: 70px 0px;
+}
+
+#regalar h2{
+    margin-top: 0;
+}
+
+#regalar .carta{
+    background-size: cover;
+    background-position: center center;
+    padding: 100px;
+    margin: 20px;
+    border-radius: 15px;
+    color: white;
+}
+
+.carta:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("media/GloboPersonalizado.jpg");
+}
+
+.carta:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("media/CajasRegalo.jpg");
+}
+
+.carta:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("media/osooo.jpeg");
+}
+
+#fiesta{
+    text-align: center;
+    background-color: #FF4545;
+    color: white;
+}
+
+#fiesta .container{
+    text-align: center;
+    padding: 60px 12px;
+}
+
+#video{
+    background-color: white;
+}
+
+#festejar{
+    text-align: center;
+    background-color: #FF4545;
+    color: white;
+}
+
+#festejar .container{
+    padding: 60px 12px;
+}
+
+#festejar h4{
+    color: black;
+    padding: 0 1rem;
+    font-weight: 600;
+}
+
+#festejar .contenedor{
+    text-align: center;
+    padding: 30px 12px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+}
+
+#festejar .contenedor .seccion{
+    width: 330px;
+    height: 300px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s;
+}
+
+#festejar .contenedor .seccion:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+#festejar .contenedor .seccion img{
+    width: 330px;
+    height: 220px;
+}
+
+#peluches{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 70vh;
+    color: white;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("media/ososfondo.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#peluches h2{
+    color: white;
+}
+
+/* Aqui empieza las modificaciones de la galeria */
+#peluches2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 155vh;
+    color: white;
+}
+
+#peluches2 h2{
+    font-weight: 500;
+    font-size: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+}
+
+#peluches2 .container{
+    padding: 70px 0px;
+    display: flex; /*  */
+}
+
+#peluches2 .contenedor-imagenes{
+    display: flex;
+    width: 100%;
+    margin: auto;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border-radius: 3px;
+}
+
+#peluches2 .contenedor-imagenes .imagen{
+    width: 32%;
+    position: relative;
+    height: 300px;
+    margin-bottom: 5px;
+    box-shadow: 0px 0px 3px 0px rgba(0,0,0,.75);
+}
+
+#peluches2 .contenedor-imagenes .imagen img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#peluches2 .overlay{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: rgb(255, 65, 65, 0.781);
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+    overflow: hidden;
+}
+
+#peluches2 .imagen:hover .overlay{
+    height: 100%;
+    cursor: pointer;
+}
+
+#contacto{
+    background-color: #FF4545;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    height: 90vh;
+}
+
+#contacto a{
+    text-decoration: none;
+    color: white;
+}
+
+#contacto a:hover{
+    color: black;
+}
+
+#registro{
+    padding-bottom: 20px;
+}
+
+#registro .container{
+    text-align: center;
+    padding: 0.5px 12px;
+}
+
+#registro .color-letra{ color: #FF4545;}
+
+footer{
+    background-color: rgb(230, 230, 230);
+}
+
+footer h5{
+    font-size: 15px;
+    margin: 0;
+    padding: 12px;
+    color: rgb(100, 100, 100);
+}
+
+footer .container{
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+/*Papeleria html */
+#papeleria{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    color: white;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("media/Sin\ título-1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+}
+
+#papeleria h1{
+    color: white;
+    font-weight: bold;
+}
+
+#pap-art button{
+    color: white;
+}
+
+#pap-art .container{
+    padding: 70px 0px;
+}
+
+#pap-art .carta{
+    background-size: cover;
+    background-position: center center;
+    padding: 100px;
+    margin: 20px;
+    border-radius: 15px;
+    color: white;
+}
+
+#pap-art .carta:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("media/libretas.jpg");
+}
+
+#pap-art .carta:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("media/lapizpape.jpg");
+}
+
+#pap-art .carta:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("media/colores.jpg");
+}
+
+#pap-art .carta:nth-child(4){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("media/plumones.webp");
+}
+
+#pap-art .carta:nth-child(5){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("media/hojas-color.jpg");
+}
+
+/*Globos personalizados html */
+#globos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    color: white;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("media/Sin\ título-1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+}
+
+#globos h1{
+    color: white;
+    font-weight: bold;
+}
+
+#globitos button{
+    color: white;
+}
+
+#globitos .container{
+    padding: 70px 0px;
+}
+
+#globitos .carta{
+    background-size: cover;
+    background-position: center center;
+    padding: 100px;
+    margin: 20px;
+    border-radius: 15px;
+    color: white;
+}
+
+#globitos .carta:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("media/globo-cumple.jpg");
+}
+
+#globitos .carta:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("media/globo-neon.webp");
+}
+
+#globitos .carta:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("media/globo-arreglo.jpg");
+}
+
+#globitos .carta:nth-child(4){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("media/globo-transparente.jpeg");
+}
+
+#globitos .carta:nth-child(5){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("media/globo-pintura.jpg");
+}
+
+/*Cajas de Regalo html */
+#cajas-regalo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    color: white;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("media/Sin\ título-1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+}
+
+#cajas-regalo h1{
+    color: white;
+    font-weight: bold;
+}
+
+#cajitas button{
+    color: white;
+}
+
+#cajitas .container{
+    padding: 70px 0px;
+}
+
+#cajitas .carta{
+    background-size: cover;
+    background-position: center center;
+    padding: 100px;
+    margin: 20px;
+    border-radius: 15px;
+    color: white;
+}
+
+#cajitas .carta:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("media/caja-simple.jpg");
+}
+
+#cajitas .carta:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("media/caja-decorada.webp");
+}
+
+#cajitas .carta:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("media/caja-secciones.jpeg");
+}
+
+#cajitas .carta:nth-child(4){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("media/caja-sorpresa.jpg");
+}
+
+#cajitas .carta:nth-child(5){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("media/caja-sencilla.jpg");
+}
+
+/* Merceria html */
+#merceria{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    color: white;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("media/Sin\ título-1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+}
+
+#merceria h1{
+    color: white;
+    font-weight: bold;
+}
+
+#merce button{
+    color: white;
+}
+
+#merce .container{
+    padding: 70px 0px;
+}
+
+#merce .carta{
+    background-size: cover;
+    background-position: center center;
+    padding: 100px;
+    margin: 20px;
+    border-radius: 15px;
+    color: white;
+}
+
+#merce .carta:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("media/merceria-estambre.jpg");
+}
+
+#merce .carta:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("media/merceria-botones.jpg");
+}
+
+#merce .carta:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("media/merceria-hilos.jpg");
+}
+
+#merce .carta:nth-child(4){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("media/merceria-blondas.jpg");
+}
+
+#merce .carta:nth-child(5){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("media/merceria-agujas.jpg");
+}
+
+#carro-compras{
+    text-align: center;
+    background-color: whitesmoke;
+    color: #FF4545;
+}
+
+#carro-compras .container{
+    text-align: center;
+    padding: 50px 5px;
+}
+
+#carrito .container{
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+#carrito .table{
+    width: 100%;
+    border: 3px solid whitesmoke;
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+    table-layout: fixed;
+}
+
+#carrito .table caption{
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#carrito .table tr{
+    background-color: whitesmoke;
+    border: 2px solid #FF4545;
+}
+
+#carrito .table th, .table td{
+    font-size: 16px;
+    padding: 8px;
+    text-align: center;
+}
+
+
+@media(min-width: 720px){
+    h1{ font-size: 40px;}
+    h2{ font-size: 35px;}
+    h3{ font-size: 30px;}
+    h4{ font-size: 25px;}
+    h5{ font-size: 20px;}
+    p{ font-size: 17px;}
+
+    header{
+        position: fixed;
+        width: 100%;
+    }
+
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+    #banner {
+        height: 100vh;
+    }
+
+    #ofrece .container{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #ofrece .texto{
+        width: 50%;
+        max-width: 600px;
+        text-align: center;
+        padding-left: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #ofrece h2{
+        margin-top: 0px;
+    }
+
+    #ofrece h4{
+        font-size: 20px;
+    }
+
+    #ofrece .img-container{
+        background-image: url("media/Sin\ título-1.jpg");
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 700px;
+    }
+
+    #catalogo h4{
+        font-size: 20px;
+        margin-bottom: 50px;
+    }
+
+    #regalar .programas{
+        display: flex; /*Para poner una carta al lado de la otra*/
+        justify-content: center;
+    }
+
+    #regalar h3{
+        margin-top: 0;
+    }
+
+    #regalar h4{
+        display: block;
+        font-size: 17px;
+    }
+
+    #regalar .carta{
+        padding: 100px;
+    }
+
+    #regalar button{
+        color: white;
+    }
+    
+    #festejar .container{
+        padding: 20px 12px;
+    }
+    
+    #festejar h4{
+        color: black;
+        padding: 0 1rem;
+        font-weight: 600;
+        font-size: 18px;
+    }
+
+    #registro{
+        background-color: white;
+    }
+
+    #registro .container{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #registro .texto{
+        width: 50%;
+        max-width: 600px;
+        text-align: center;
+        padding-left: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #registro h2{
+        margin-top: 0px;
+        font-size: 35px;
+    }
+
+    #registro h4{
+        font-size: 20px;
+    }
+
+    #registro .img-container{
+        background-image: url("media/LOGO.png");
+        background-size: cover;
+        background-position: center center;
+        height:450px;
+        width: 550px;
+    }
+
+    #papeleria {
+        height: 100vh;
+    }
+
+    #pap-art button{
+        color: white;
+    }
+
+    #pap-art .programas{
+        display: flex; /*Para poner una carta al lado de la otra*/
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    #pap-art h3{
+        margin-top: 0;
+    }
+
+    #pap-art .carta{
+        padding: 100px;
+    }
+
+    #pap-art button{
+        color: white;
+    }
+
+    /* globos.html */
+    #globos {
+        height: 100vh;
+    }
+
+    #globitos button{
+        color: white;
+    }
+
+    #globitos .programas{
+        display: flex; /*Para poner una carta al lado de la otra*/
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    #globitos h3{
+        margin-top: 0;
+    }
+
+    #globitos .carta{
+        padding: 100px;
+    }
+
+    #globitos button{
+        color: white;
+    }
+
+    /* cajas de regalo html */
+    #cajas-regalo {
+        height: 100vh;
+    }
+
+    #cajitas button{
+        color: white;
+    }
+
+    #cajitas .programas{
+        display: flex; /*Para poner una carta al lado de la otra*/
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    #cajitas h3{
+        margin-top: 0;
+    }
+
+    #cajitas .carta{
+        padding: 100px;
+    }
+
+    #cajitas button{
+        color: white;
+    }
+
+    /* merceria html */
+    #merceria {
+        height: 100vh;
+    }
+
+    #merce button{
+        color: white;
+    }
+
+    #merce .programas{
+        display: flex; /*Para poner una carta al lado de la otra*/
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    #merce h3{
+        margin-top: 0;
+    }
+
+    #merce .carta{
+        padding: 100px;
+    }
+
+    #merce button{
+        color: white;
+    }
+}
+
+@media screen and (max-width:450px){
+    #peluches2 h2{
+        font-size: 22px;
+    }
+
+    #peluches2 .contenedor-imagenes{
+        width: 98%;
+    }
+
+    #peluches2 .contenedor-imagenes .imagen{
+        width: 80%;
+    }
+}
